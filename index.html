@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Doe sangue! Doe vida!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
     rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="img/logo.png" alt="DOE" class="logo">
+        <img src="/logo.png" alt="DOE" class="logo">
         <h2>Sua doação importa</h2>
         <p>Ate 3 vidas com 1 doação</p>
         <p>Mais de 38.000 doacoes sao necessarias todos os dias</p>
@@ -23,7 +23,7 @@
 
     <section class="form hide">
         <h2>Entre na lista de doadores</h2>
-        <form action="/">
+        <form action="/" method="POST">
             <input type="text" name="name" placeholder="Nome completo"></input>
             <input type="text" name="email" placeholder="E-mail"></input>
             <input type="text" name="blood" placeholder="Tipo sanguineo"></input>
@@ -35,34 +35,23 @@
         <h2>Ultimos <span>doadores</span></h2>
 
         <section class="donors">
-            <div class="donor">
-                <div class="blood">AB+</div>
-                <p>Diego Fernandes</p>
-            </div>
+
+            {% for donor in donors %}
 
             <div class="donor">
-                <div class="blood">B+</div>
-                <p>Cleiton Souza</p>
+                <div class="blood">{{donor.blood}}</div>
+                <p>{{donor.name}}</p>
             </div>
 
-            <div class="donor">
-                <div class="blood">A+</div>
-                <p>Robson Marques</p>
-            </div>
-
-            <div class="donor">
-                <div class="blood">O+</div>
-                <p>Mayk Brito</p>
-            </div>
-
+            {% endfor %}
         </section>
     </main>
 
     <footer>
-        Com ❤️ Rocketseat
+        Com ❤️ Don Renato  &  Rocketseat
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

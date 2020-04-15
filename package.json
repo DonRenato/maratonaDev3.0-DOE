@@ -1,0 +1,18 @@
+{
+  "name": "maratona-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DonRenato/maratonaDev3.0-DOE.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1",
+    "pg": "^8.0.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

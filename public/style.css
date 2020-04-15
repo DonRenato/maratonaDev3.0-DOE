@@ -134,7 +134,9 @@ main .donors {
 
 .donor p{
     margin-top: 24px;
+    margin-bottom: 64px;
     font-size: 14px;
+    
 }
 
 footer{
@@ -143,7 +145,7 @@ footer{
 
     border: 1px #eee solid;
 }
-
+  /* CSS DA USADOS NO SCRIPT */
 section.form{
     transition: all 300ms;
 }
